@@ -1,0 +1,47 @@
+{
+    "run_type": "server",
+    "local_addr": "127.0.0.1",
+    "local_port": 10242,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "WanLgOqVqe2006!@#$",		
+        "IvCKvA4sCxm4mpvl"
+    ],
+    "ssl": {
+        "cert": "/usr/local/trojan-go/trojan.domain_name.com.pem",
+        "key": "/usr/local/trojan-go/trojan.domain_name.com.key",
+        "sni": "trojan.domain_name.com",
+        "alpn": [
+            "http/1.1"
+        ],
+        "session_ticket": true,
+        "reuse_session": true,
+        "fallback_addr": "127.0.0.1",
+        "fallback_port": 80
+    },
+    "tcp": {
+        "no_delay": true,
+        "keep_alive": true,
+        "prefer_ipv4": false
+    },
+    "mux": {
+        "enabled": false,
+        "concurrency": 8,
+        "idle_timeout": 60
+    },
+    "websocket": {
+        "enabled": true,
+        "path": "/whxwangqq",
+        "host": "trojan.domain_name.com"
+    },
+    "mysql": {
+      "enabled": false,
+      "server_addr": "localhost",
+      "server_port": 3306,
+      "database": "",
+      "username": "",
+      "password": "",
+      "check_rate": 60
+    }
+}
